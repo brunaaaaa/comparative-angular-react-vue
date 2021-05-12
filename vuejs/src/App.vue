@@ -20,7 +20,7 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-align: left;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(190deg, #31475e, #63d471);
     color: #fff;
     margin-top: 60px;
