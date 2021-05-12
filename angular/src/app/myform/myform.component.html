@@ -1,0 +1,23 @@
+<form>
+  <label
+    >Height in m
+    <input
+      type="number"
+      autofocus
+      [(ngModel)]="height"
+      name="height"
+      (change)="calculate()"
+    />
+  </label>
+  <label
+    >Weight in kg
+    <input
+      type="number"
+      [(ngModel)]="weight"
+      name="weight"
+      (change)="calculate()"
+    />
+  </label>
+
+  Result: {{ result }}
+</form>
