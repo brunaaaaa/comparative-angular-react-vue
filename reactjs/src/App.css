@@ -2,6 +2,19 @@ h1 {
   text-align: center;
 }
 
-form {
-  padding: 1rem 6rem;
+img {
+  width: 4.2rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-around;
+}
+
+label {
+  color: #31475e;
+  font-weight: 600;
+  text-decoration: underline;
 }

@@ -65,7 +65,4 @@
     font-weight: 600;
     text-decoration: underline;
   }
-  input:first-of-type {
-    background-color: white;
-  }
 </style>

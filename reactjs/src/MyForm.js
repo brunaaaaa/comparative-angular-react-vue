@@ -1,28 +1,34 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function MyForm() {
-  const [height, setHeight] = useState(0);
-  const [weight, setWeight] = useState(0);
+  const [height, setHeight] = useState();
+  const [weight, setWeight] = useState();
   return (
     <form>
       <label>
         Height in m
         <input
-          type="number"
+          type='number'
           autofocus
           value={height}
-          onChange={(e) => setHeight(e.target.value)}
+          onChange={e => setHeight(e.target.value)}
+          required
+          placeholder='e.g. 1,60'
         />
       </label>
+      <br />
+      <br />
       <label>
         Weight in kg
         <input
-          type="number"
+          type='number'
           value={weight}
-          onChange={(e) => setWeight(e.target.value)}
+          onChange={e => setWeight(e.target.value)}
+          required
+          placeholder='e.g. 70'
         />
       </label>
-      Result: {(weight / height ** 2).toFixed(2)}
+      <p class='flow-text'>Result: {(weight / height ** 2).toFixed(2)}</p>
     </form>
   );
 }
