@@ -20,9 +20,13 @@
   export default {
     name: 'HelloWorld',
     props: {
-      title: String,
-      height: Number,
-      weight: Number
+      title: String
+    },
+    data() {
+      return {
+        height: Number,
+        weight: Number
+      }
     },
     computed: {
       result() {
